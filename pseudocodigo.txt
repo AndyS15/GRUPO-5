@@ -1,0 +1,10 @@
+double resultado = 0;
+double nota1 = 0;
+double nota2 = 0;
+double nota3 = 0;
+
+double nota1p = (nota1 * 25 / 100)
+double nota2p = (nota2 * 35 / 100)
+double nota3p = (nota3 * 40 / 100)
+
+resultado = nota1p + nota2p + nota3p 
