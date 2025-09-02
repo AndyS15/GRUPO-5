@@ -1,0 +1,21 @@
+double resultado;
+double nota1;
+double nota2;
+double nota3;
+
+Console.WriteLine("Ingrese su primera nota");
+nota1 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingrese su segunda nota");
+nota2 = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Ingrese su tercera nota");
+nota3 = int.Parse(Console.ReadLine());
+
+double nota1p = (nota1 * 25 / 100);
+double nota2p = (nota2 * 35 / 100);
+double nota3p = (nota3 * 40 / 100);
+
+resultado = nota1p + nota2p + nota3p;
+
+Console.WriteLine("Su resultado es " + resultado);
