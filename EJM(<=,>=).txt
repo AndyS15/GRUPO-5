@@ -1,0 +1,17 @@
+//CALCULAR PROMEDIOS
+Console.WriteLine("INGRESE SU PRIMERA NOTA: "); int primeranota = int.Parse(Console.ReadLine());
+Console.WriteLine("INGRESE SU SEGUNDA NOTA: "); int segundanota = int.Parse(Console.ReadLine());
+Console.WriteLine("INGRESE SU TERCERA NOTA: "); int terceranota = int.Parse(Console.ReadLine());
+
+
+double promedio = (primeranota*25/100 + segundanota*35/100 + terceranota*40/100);
+
+if (promedio <= 11)
+{
+    Console.WriteLine("\nUSTED DESAPROBO CON " + promedio);
+}
+
+else if (promedio >= 12)
+{
+    Console.WriteLine("\nUSTED APROBO CON " + promedio);
+}
