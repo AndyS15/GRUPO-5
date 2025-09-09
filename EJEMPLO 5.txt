@@ -1,0 +1,17 @@
+double a, b, c, x1, x2, raiz;
+
+Console.Write("Ingresa coeficiente a: ");
+a = double.Parse(Console.ReadLine());
+
+Console.Write("Ingresa coeficiente b: ");
+b = double.Parse(Console.ReadLine());
+
+Console.Write("Ingresa coeficiente c: ");
+c = double.Parse(Console.ReadLine());
+
+raiz = Math.Sqrt(Math.Pow(b, 2) - 4 * a * c);
+x1 = (-b + raiz) / (2 * a);
+x2 = (-b - raiz) / (2 * a);
+
+Console.WriteLine("x1 = " + x1);
+Console.WriteLine("x2 = " + x2);
