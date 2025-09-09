@@ -1,17 +1,12 @@
-double a, b, c, x1, x2, raiz;
+ double a, b, c;
 
-Console.Write("Ingresa coeficiente a: ");
-a = double.Parse(Console.ReadLine());
+ Console.Write("Ingrese cateto 1: ");
+ a = double.Parse(Console.ReadLine());
 
-Console.Write("Ingresa coeficiente b: ");
-b = double.Parse(Console.ReadLine());
+ Console.Write("Ingrese cateto 2: ");
+ b = double.Parse(Console.ReadLine());
 
-Console.Write("Ingresa coeficiente c: ");
-c = double.Parse(Console.ReadLine());
-
-raiz = Math.Sqrt(Math.Pow(b, 2) - 4 * a * c);
-x1 = (-b + raiz) / (2 * a);
-x2 = (-b - raiz) / (2 * a);
-
-Console.WriteLine("x1 = " + x1);
-Console.WriteLine("x2 = " + x2);
+ c = Math.Sqrt(Math.Pow(a, 2) + Math.Pow(b, 2));
+ 
+ Console.Write("El valor de la hipotenusa es: ", c);
+            
