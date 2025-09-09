@@ -1,0 +1,27 @@
+namespace ConsoleApp5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 1;
+            int b = 1;
+            int c = a + b;
+
+            if (c == 2)
+            {
+                Console.WriteLine("Operacion realizada");
+            }
+            if (c != 2)
+            {
+                Console.WriteLine("Operacion no realizada");
+            }
+            else
+            {
+                Console.WriteLine("No existe operacion");
+                Console.ReadLine();
+            }
+
+        }
+    }
+}
