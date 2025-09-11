@@ -1,29 +1,27 @@
 Console.WriteLine("Bienvenido, recuerde obtendra un descuento del 15% en su compra si esta supera los S/100");
-Console.WriteLine("Ingrese el precio del producto: ");
-double pdp = double.Parse(Console.ReadLine());
+     Console.WriteLine("Ingrese el precio del producto: ");
+     double pdp = double.Parse(Console.ReadLine());
 
-Console.WriteLine();
-Console.WriteLine("Ingrese la cantidad que desea comprar: ");
-int cdp = int.Parse(Console.ReadLine());
+     Console.WriteLine();
+     Console.WriteLine("Ingrese la cantidad que desea comprar: ");
+     int cdp = int.Parse(Console.ReadLine());
 
-double subtotal = pdp * cdp;
+     double subtotal = pdp * cdp;
 
-double descuento;
-double pfinal;
+     if (subtotal > 100)
+      {
+       
+         double descuento = subtotal * 0.15;
+         double total = subtotal - descuento;
+         Console.WriteLine("El subtotal es: " + subtotal);
+         Console.WriteLine("El descuento aplicado es: " + descuento);
+         Console.WriteLine("El total a pagar es: " + total);
+      }
 
-if (subtotal > 100) 
-{
-    descuento = 15 / 100;
-}
-
-else if (subtotal < 0)
-{ 
-    descuento = 0; 
-}
-
-pfinal = subtotal * descuento;
-
-Console.WriteLine();
-Console.WriteLine("Su subtotal es de: " + subtotal);
-Console.WriteLine("Su descueto es de: " + descuento);
-Console.WriteLine("El precio final es de: " + pfinal);
+   else
+    {
+        Console.WriteLine("El subtotal es: " + subtotal);
+        Console.WriteLine("EL descuento aplicado es: 0");
+        Console.WriteLine("El total a pagar es: " + subtotal);
+      }
+   
