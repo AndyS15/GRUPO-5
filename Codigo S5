@@ -1,100 +1,92 @@
- Console.WriteLine("Ingrese el producto a consumir (Snacks, Bebidas, Dulces)");
- string oppr = Console.ReadLine().ToLower();
+Console.WriteLine("Ingrese el producto a consumir (Snacks, Bebidas, Dulces)");
+    string oppr = Console.ReadLine().ToLower();
 
- switch (oppr)
- {
-
-
-     case "snacks":
-         Console.WriteLine();
-         Console.WriteLine("\nDoritos, Chifles, Cua Cua");
-         string snack = Console.ReadLine().ToLower();
-
-         if (snack == "doritos")
-         {
-             Console.WriteLine("\nPrecio: S/2.50");
-             Console.WriteLine("Gracias por comprar Doritos");
-         }
-
-         else if (snack == "chifles")
-         {
-             Console.WriteLine("\nPrecio: S/2.00");
-             Console.WriteLine("Gracias por comprar Chifles");
-         }
-
-         else if (snack == "cua cua")
-         {
-             Console.WriteLine("\nPrecio: S/1.80");
-             Console.WriteLine("Gracias por comprar Cua Cua");
-         }
-
-         else
-         {
-             Console.WriteLine("Snack no valido");
-         }
-         break;
+    switch (oppr)
+    {
 
 
-     case "bebidas":
-         Console.WriteLine();
-         Console.WriteLine("\nCoca Cola, Agua, Inka Cola");
-         string bebida = Console.ReadLine().ToLower();
+        case "snacks":
+            Console.WriteLine();
+            Console.WriteLine("\nDoritos, Chifles, Cua Cua");
+            string snack = Console.ReadLine().ToLower();
 
-         if (bebida == "coca cola")
-         {
-             Console.WriteLine("\nPrecio: S/3.50");
-             Console.WriteLine("Gracias por comprar Coca Cola");
-         }
+            if (snack == "doritos")
+            {
+                Console.WriteLine("\nPrecio: S/2.50\nGracias por comprar\nProcesando su compra...");
+            }
 
-         else if (bebida == "agua")
-         {
-             Console.WriteLine("\nPrecio: S/2.00");
-             Console.WriteLine("Gracias por comprar Agua");
-         }
+            else if (snack == "chifles")
+            {
+                Console.WriteLine("\nPrecio: S/2.00\nGracias por comprar\nProcesando su compra...");
+            }
 
-         else if (bebida == "inka cola")
-         {
-             Console.WriteLine("\nPrecio: S/3.20");
-             Console.WriteLine("Gracias por comprar Inka Cola");
-         }
+            else if (snack == "cua cua")
+            {
+                Console.WriteLine("\nPrecio: S/1.80\nGracias por comprar\nProcesando su compra...");
+            }
 
-         else
-         {
-             Console.WriteLine("Bebida no valido");
-         }
-         break;
+            else
+            {
+                Console.WriteLine("Snack no valido");
+            }
+            break;
 
 
-     case "dulces":
-          Console.WriteLine();
-          Console.WriteLine("\nSublime, Princesa, Triangulo");
-          string dulce = Console.ReadLine().ToLower();
+        case "bebidas":
+            Console.WriteLine();
+            Console.WriteLine("\nCoca Cola, Agua, Inka Cola");
+            string bebida = Console.ReadLine().ToLower();
 
-         if (dulce == "sublime")
-         {
-             Console.WriteLine("\nPrecio: S/2.00");
-             Console.WriteLine("Gracias por comprar Sublime");
-         }
+            if (bebida == "coca cola")
+            {
+                Console.WriteLine("\nPrecio: S/3.50\nGracias por comprar\nProcesando su compra...");
+            }
 
-         else if (dulce == "princesa")
-         {
-             Console.WriteLine("\nPrecio: S/1.50");
-             Console.WriteLine("Gracias por comprar Princesa");
-         }
+            else if (bebida == "agua")
+            {
+                Console.WriteLine("\nPrecio: S/2.00\nGracias por comprar\nProcesando su compra...");
+            }
 
-         else if (dulce == "triangulo")
-         {
-             Console.WriteLine("\nPrecio: S/3.00");
-             Console.WriteLine("Gracias por comprar Triangulo");
-         }
+            else if (bebida == "inka cola")
+            {
+                Console.WriteLine("\nPrecio: S/3.20\nGracias por comprar\nProcesando su compra...");
+            }
 
-         else
-         {
-             Console.WriteLine("Dulce no valido");
-         }
-         break;
+            else
+            {
+                Console.WriteLine("Bebida no valido");
+            }
+            break;
 
 
-     default:
-         Console.WriteLine("Opcion no valida");
-         break;
+        case "dulces":
+             Console.WriteLine();
+             Console.WriteLine("\nSublime, Princesa, Triangulo");
+             string dulce = Console.ReadLine().ToLower();
+
+            if (dulce == "sublime")
+            {
+                Console.WriteLine("\nPrecio: S/2.00\nGracias por comprar\nProcesando su compra...");
+            }
+
+            else if (dulce == "princesa")
+            {
+                Console.WriteLine("\nPrecio: S/1.50\nGracias por comprar\nProcesando su compra...");
+            }
+
+            else if (dulce == "triangulo")
+            {
+                Console.WriteLine("\nPrecio: S/3.00\nGracias por comprar\nProcesando su compra...");
+            }
+
+            else
+            {
+                Console.WriteLine("Dulce no valido");
+            }
+            break;
+
+
+        default:
+            Console.WriteLine("Opcion no valida");
+            break;
+   }
