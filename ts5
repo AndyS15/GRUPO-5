@@ -1,0 +1,76 @@
+Console.WriteLine("Ingrese el producto a consumir (Snacks, Bebidas, Dulces");
+string oppr = Console.ReadLine().ToLower();
+
+switch (oppr)
+{
+    case "snacks":
+        Console.WriteLine();
+        Console.WriteLine("\nDoritos, Chifles, Cua Cua");
+        string snack = Console.ReadLine().ToLower();
+
+        switch (snack)
+        {
+            case "doritos":
+                Console.WriteLine("\nGracias por comprar Doritos");
+                break;
+            case "chifles":
+                Console.WriteLine("\nGracias por comprar Chifles");
+                break;
+            case "cua cua":
+                Console.WriteLine("\nGracias por comprar Cua Cua");
+                break;
+            default: Console.WriteLine("\n Snack no valido");
+                break;
+        } 
+        break;
+
+    case "bebidas":
+
+        Console.WriteLine();
+        Console.WriteLine("\nCoca Cola, Agua, Inka Cola");
+        string bebida = Console.ReadLine().ToLower();
+
+        switch (bebida)
+        {
+            case "coca cola":
+                Console.WriteLine("\nGracias por comprar Coca Cola");
+                break;
+            case "agua":
+                Console.WriteLine("\nGracias por comprar Agua");
+                break;
+            case "inka cola":
+                Console.WriteLine("\nGracias por comprar Inka Cola");
+                break;
+            default:
+                Console.WriteLine("\n Bebida no valido");
+                break;
+        }
+        break;
+
+
+    case "dulces":
+
+         Console.WriteLine();
+         Console.WriteLine("\nSublime, Princesa, Triangulo");
+         string dulce = Console.ReadLine().ToLower();
+
+        switch (dulce)
+        {
+            case "sublime":
+                Console.WriteLine("\nGracias por comprar Sublime");
+                break;
+            case "princesa":
+                Console.WriteLine("\nGracias por comprar Princesa");
+                break;
+            case "triangulo":
+                Console.WriteLine("\nGracias por comprar Triangulo");
+                break;
+            default:
+                Console.WriteLine("\n Dulce no valido");
+                break;
+        }
+        break;
+
+    default:
+        Console.WriteLine("Opcion no valida");
+        break;
