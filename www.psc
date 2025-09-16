@@ -3,7 +3,7 @@ Algoritmo sin_titulo
 	Leer oppr
 	Según oppr Hacer
 		'snacks':
-			Escribir '\nDoritos, Chifles, Cua Cua'
+			Escribir 'Doritos, Chifles, Cua Cua'
 			Leer snack
 			Si snack='doritos' Entonces
 				Escribir 'Precio: S/2.50'
@@ -72,3 +72,4 @@ Algoritmo sin_titulo
 			Escribir 'Producto no valido'
 	FinSegún
 FinAlgoritmo
+
