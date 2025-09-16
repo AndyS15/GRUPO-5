@@ -1,4 +1,4 @@
-Console.WriteLine("Ingrese el producto a consumir (Snacks, Bebidas, Dulces");
+Console.WriteLine("Ingrese el producto a consumir (Snacks, Bebidas, Dulces)");
 string oppr = Console.ReadLine().ToLower();
 
 switch (oppr)
