@@ -3,8 +3,6 @@ Console.WriteLine("Ingrese el producto a consumir (Snacks, Bebidas, Dulces)");
 
     switch (oppr)
     {
-
-
         case "snacks":
             Console.WriteLine();
             Console.WriteLine("\nDoritos, Chifles, Cua Cua");
@@ -14,12 +12,10 @@ Console.WriteLine("Ingrese el producto a consumir (Snacks, Bebidas, Dulces)");
             {
                 Console.WriteLine("\nPrecio: S/2.50\nGracias por comprar\nProcesando su compra...");
             }
-
             else if (snack == "chifles")
             {
                 Console.WriteLine("\nPrecio: S/2.00\nGracias por comprar\nProcesando su compra...");
             }
-
             else if (snack == "cua cua")
             {
                 Console.WriteLine("\nPrecio: S/1.80\nGracias por comprar\nProcesando su compra...");
@@ -41,12 +37,10 @@ Console.WriteLine("Ingrese el producto a consumir (Snacks, Bebidas, Dulces)");
             {
                 Console.WriteLine("\nPrecio: S/3.50\nGracias por comprar\nProcesando su compra...");
             }
-
             else if (bebida == "agua")
             {
                 Console.WriteLine("\nPrecio: S/2.00\nGracias por comprar\nProcesando su compra...");
             }
-
             else if (bebida == "inka cola")
             {
                 Console.WriteLine("\nPrecio: S/3.20\nGracias por comprar\nProcesando su compra...");
@@ -68,12 +62,10 @@ Console.WriteLine("Ingrese el producto a consumir (Snacks, Bebidas, Dulces)");
             {
                 Console.WriteLine("\nPrecio: S/2.00\nGracias por comprar\nProcesando su compra...");
             }
-
             else if (dulce == "princesa")
             {
                 Console.WriteLine("\nPrecio: S/1.50\nGracias por comprar\nProcesando su compra...");
             }
-
             else if (dulce == "triangulo")
             {
                 Console.WriteLine("\nPrecio: S/3.00\nGracias por comprar\nProcesando su compra...");
