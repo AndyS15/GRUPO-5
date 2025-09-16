@@ -11,13 +11,16 @@ switch (oppr)
         switch (snack)
         {
             case "doritos":
-                Console.WriteLine("\nGracias por comprar Doritos");
+                Console.WriteLine("\nPrecio: S/2.50");
+                Console.WriteLine("Gracias por comprar Doritos");
                 break;
             case "chifles":
-                Console.WriteLine("\nGracias por comprar Chifles");
+                Console.WriteLine("\nPrecio: S/2.00");
+                Console.WriteLine("Gracias por comprar Chifles");
                 break;
             case "cua cua":
-                Console.WriteLine("\nGracias por comprar Cua Cua");
+                Console.WriteLine("\nPrecio: S/1.80");
+                Console.WriteLine("Gracias por comprar Cua Cua");
                 break;
             default: Console.WriteLine("\n Snack no valido");
                 break;
@@ -33,16 +36,19 @@ switch (oppr)
         switch (bebida)
         {
             case "coca cola":
-                Console.WriteLine("\nGracias por comprar Coca Cola");
+                Console.WriteLine("\nPrecio: S/3.50");
+                Console.WriteLine("Gracias por comprar Coca Cola");
                 break;
             case "agua":
-                Console.WriteLine("\nGracias por comprar Agua");
+                Console.WriteLine("\nPrecio: S/2.00");
+                Console.WriteLine("Gracias por comprar Agua");
                 break;
             case "inka cola":
-                Console.WriteLine("\nGracias por comprar Inka Cola");
+                Console.WriteLine("\nPrecio: S/3.20");
+                Console.WriteLine("Gracias por comprar Inka Cola");
                 break;
             default:
-                Console.WriteLine("\n Bebida no valido");
+                Console.WriteLine("\n Bebida no valida");
                 break;
         }
         break;
@@ -57,13 +63,16 @@ switch (oppr)
         switch (dulce)
         {
             case "sublime":
-                Console.WriteLine("\nGracias por comprar Sublime");
+                Console.WriteLine("\nPrecio: S/2.00");
+                Console.WriteLine("Gracias por comprar Sublime");
                 break;
             case "princesa":
-                Console.WriteLine("\nGracias por comprar Princesa");
+                Console.WriteLine("\nPrecio: S/1.50");
+                Console.WriteLine("Gracias por comprar Princesa");
                 break;
             case "triangulo":
-                Console.WriteLine("\nGracias por comprar Triangulo");
+                Console.WriteLine("\nPrecio: S/3.00");
+                Console.WriteLine("Gracias por comprar Triangulo");
                 break;
             default:
                 Console.WriteLine("\n Dulce no valido");
