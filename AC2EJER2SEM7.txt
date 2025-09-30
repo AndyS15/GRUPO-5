@@ -1,0 +1,26 @@
+int opcion;
+
+do
+{
+    Console.WriteLine("Elija que el prosedimiento a realizar: ");
+    Console.WriteLine("1. Calcular sumna");
+    Console.WriteLine("2. Calcular resta");
+    Console.WriteLine("3. Salir");
+    Console.WriteLine();
+
+    opcion = int.Parse(Console.ReadLine());
+
+    if (opcion >= 1 && opcion <= 3)
+    {
+        Console.WriteLine("\nPerfecto, Ha elegido la opcion " + opcion + "."); 
+    }
+
+    else
+    {
+        Console.WriteLine("\nOpcion no valida."); 
+        Console.WriteLine();
+    }
+}
+while (opcion < 1 || opcion > 3);
+
+Console.WriteLine("Programa Finalizado.");
