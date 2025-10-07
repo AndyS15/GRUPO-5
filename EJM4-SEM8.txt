@@ -1,0 +1,73 @@
+    public class Dato
+    {
+        public static int buscarMayor(int a, int b, int c)
+        {
+            int mayor;
+            if (a > b && a > c)
+            {
+                mayor = a;
+            }
+            else
+            {
+                if (b > c)
+                {
+                    mayor = b;
+                }
+                else
+                {
+                    mayor = c;
+                }
+            }
+            return mayor;
+        }
+        public static int buscarMenor(int a, int b, int c)
+        {
+            int menor;
+            if (a <= b && a <= c)
+            {
+                menor = a;
+            }
+            else
+            {
+                if (b < c)
+                {
+                    menor = b;
+                }
+                else
+                {
+                    menor = c;
+                }
+            }
+            return menor;
+        }
+
+        public static int buscarIntermedio(int a, int b, int c, int mayor,int menor)
+        {
+            int inter;
+            inter = (a + b + c) - (mayor + menor);
+            return inter;
+        }
+    } 
+
+------------------------------------------------------------------------------------------------
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int a, b, c, mayor, menor, inter;
+        Console.Write("Ingresar numero 1: ");
+        a = int.Parse(Console.ReadLine());
+        Console.Write("Ingresar numero 2: ");
+        b = int.Parse(Console.ReadLine());
+        Console.Write("Ingresar numero 3: ");
+        c = int.Parse(Console.ReadLine());
+        mayor = Dato.buscarMayor(a, b, c);
+        menor = Dato.buscarMenor(a, b, c);
+        inter = Dato.buscarIntermedio(a, b, c, mayor, menor);
+        Console.WriteLine("El mayor es = {0}", mayor);
+        Console.WriteLine("El menor es = {0}", menor);
+        Console.WriteLine("El intermedio es = {0}", inter);
+        Console.ReadKey();
+    }
+}
