@@ -1,0 +1,47 @@
+
+namespace semana8_1
+{
+    internal class Dato
+    {
+       public static int exponente(int n, int expo)
+        {
+            int f = 1;
+            if (expo == 0)
+            {
+                return 1;
+            }
+            else
+            {
+                for (int i = 1; i <= expo; i++)
+                {
+                    f = f * n;
+                }
+                return f;
+            }
+        }
+    }
+}
+
+------------------------------------------------------------------------------------------------
+
+namespace semana8_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n, e, r;
+
+            Console.Write("Ingresar número: ");
+            n = int.Parse(Console.ReadLine());
+
+            Console.Write("Ingresar exponente: ");
+            e = int.Parse(Console.ReadLine());
+
+            r = Dato.exponente(n, e);
+
+            Console.WriteLine("Resultado = {0}", r);
+            Console.ReadKey();
+        }
+    }
+}
